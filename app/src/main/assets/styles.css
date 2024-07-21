@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@charset 'iso-8859-15';
+@charset "UTF-8";
+@charset 'UTF-8';
+
+body{
+	background-color: #ffffff;
+}
+img{
+background-size: 100%;
+align-self: left;
+float: left;
+height: 240px;
+width: 300px;
+}

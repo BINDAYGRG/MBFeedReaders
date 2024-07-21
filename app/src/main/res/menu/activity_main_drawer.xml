@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Allposts"
+            android:icon="@drawable/ic_menu_send"
+            android:title="All Posts" />
+
+        <item
+            android:id="@+id/SyncPosts"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Sync Posts" />
+        <item
+            android:id="@+id/AddWebsite"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Add Website" />
+
+    </group>
+
+        <item
+            android:id="@+id/my_feeds"
+            android:icon="@drawable/ic_menu_send"
+            android:title="My Feeds"/>
+
+    <item android:title="Tools">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="5dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedreader_title"
+        android:id="@+id/OfflineTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/OfflineLetterView"
+        android:layout_toEndOf="@+id/OfflineLetterView"
+        android:textSize="16sp"
+        android:minLines="1"
+        android:maxLength="80"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/hey_its_descriptions"
+        android:id="@+id/OfflineDescription"
+        android:layout_below="@+id/OfflineTitle"
+        android:layout_toRightOf="@+id/OfflineLetterView"
+        android:layout_toEndOf="@+id/OfflineLetterView"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/OfflineLetterView"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/x"
+        android:maxLength="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:textSize="44sp"/>
+
+</RelativeLayout>

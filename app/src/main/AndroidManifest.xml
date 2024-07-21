@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.mbfeedreaders.com.mbfeedreaders">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FeedLists.AddFeedActivity"
+            android:label="@string/title_activity_add_feed"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.mbfeedreaders.com.mbfeedreaders.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FeedLists.EditRssFeedActivity"
+            android:label="@string/title_activity_edit_rss_feed"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.mbfeedreaders.com.mbfeedreaders.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RssItemViewActivity"
+            android:label="@string/title_activity_rss_item_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.mbfeedreaders.com.mbfeedreaders.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OfflineUse.OfflineRss"
+            android:label="Offline Use"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.mbfeedreaders.com.mbfeedreaders.MainActivity" />
+        </activity>
+        <activity android:name=".SyncPost" />
+
+        <service
+            android:name="notifications.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>
